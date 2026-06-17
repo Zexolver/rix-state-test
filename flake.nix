@@ -9,9 +9,10 @@
     };
     nixgl.url = "github:nix-community/nixGL"; # <-- ADDED NIXGL INPUT
     swiftfetch.url = "github:Ly-sec/swiftfetch";
+      peeky.url = "github:dmyTRUEk/peeky";
     };
 
-  outputs = { self, nixpkgs, home-manager, nixgl, swiftfetch, ... }:
+  outputs = { self, nixpkgs, home-manager, nixgl, swiftfetch, peeky, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -27,7 +28,7 @@
             home.homeDirectory = "/root";
             home.stateVersion = "24.05";
             
-            home.packages = import ./groups/upstream/default.nix { inherit pkgs swiftfetch; };
+            home.packages = import ./groups/upstream/default.nix { inherit pkgs peeky swiftfetch; };
           }
         ];
       };
