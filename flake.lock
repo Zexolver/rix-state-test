@@ -170,6 +170,21 @@
         "type": "github"
       }
     },
+    "nixpkgs_7": {
+      "locked": {
+        "lastModified": 1765204905,
+        "narHash": "sha256-xuFDaEr2jAHRWezVlkRc7B1zadcaD4NGcGx2DbpoyDU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "96ca3529c27caa2ba3e8c17327ec551193cb12dd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "peeky": {
       "inputs": {
         "nixpkgs": "nixpkgs_3",
@@ -195,7 +210,8 @@
         "nixgl": "nixgl",
         "nixpkgs": "nixpkgs_2",
         "peeky": "peeky",
-        "swiftfetch": "swiftfetch"
+        "swiftfetch": "swiftfetch",
+        "xplr": "xplr"
       }
     },
     "rust-overlay": {
@@ -281,6 +297,24 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "xplr": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_7"
+      },
+      "locked": {
+        "lastModified": 1766559992,
+        "narHash": "sha256-0ZXVE8dDeDohI3auDBbyxMapWINuQbVNcrH53PIUFsY=",
+        "owner": "sayanarijit",
+        "repo": "xplr",
+        "rev": "17510651bde9403ecd3903610c61bec2c3e828ae",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sayanarijit",
+        "repo": "xplr",
         "type": "github"
       }
     }
