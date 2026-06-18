@@ -11,9 +11,10 @@
     swiftfetch.url = "github:Ly-sec/swiftfetch";
       peeky.url = "github:dmyTRUEk/peeky";
       xplr.url = "github:sayanarijit/xplr";
+      webx.url = "github:face-hh/webx";
     };
 
-  outputs = { self, nixpkgs, home-manager, nixgl, swiftfetch, peeky, xplr, ... }:
+  outputs = { self, nixpkgs, home-manager, nixgl, swiftfetch, peeky, xplr, webx, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -29,7 +30,7 @@
             home.homeDirectory = "/root";
             home.stateVersion = "24.05";
             
-            home.packages = import ./groups/upstream/default.nix { inherit pkgs xplr peeky swiftfetch; };
+            home.packages = import ./groups/upstream/default.nix { inherit pkgs webx xplr peeky swiftfetch; };
           }
         ];
       };
