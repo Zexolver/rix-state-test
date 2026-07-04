@@ -12,5 +12,4 @@ pkgs.netscanner # Installed via Rix
   pkgs.oxker # Installed via Rix
   pkgs.wezterm # Installed via Rix
   pkgs.mullvad-browser # Installed via Rix
-  pkgs.ripgrep # Installed via Rix
 ]
