@@ -7,11 +7,16 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixgl.url = "github:nix-community/nixGL"; # <-- ADDED NIXGL INPUT
+    nixgl.url = "github:nix-community/nixGL";
+    nixgl.inputs.nixpkgs.follows = "nixpkgs"; # <-- ADDED NIXGL INPUT
     swiftfetch.url = "github:Ly-sec/swiftfetch";
+    swiftfetch.inputs.nixpkgs.follows = "nixpkgs";
       peeky.url = "github:dmyTRUEk/peeky";
+    peeky.inputs.nixpkgs.follows = "nixpkgs";
       xplr.url = "github:sayanarijit/xplr";
+    xplr.inputs.nixpkgs.follows = "nixpkgs";
       webx.url = "github:face-hh/webx";
+    webx.inputs.nixpkgs.follows = "nixpkgs";
     };
 
   outputs = { self, nixpkgs, home-manager, nixgl, swiftfetch, peeky, xplr, webx, ... }:
